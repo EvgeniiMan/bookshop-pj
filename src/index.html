@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1 class="logo_text">Bookshop</h1>
+      </div>
+      <div class="navs__wrap">
+        <ul class="navs">
+          <li class="navs__item navs__item_active">books</li>
+          <li class="navs__item">audiobooks</li>
+          <li class="navs__item">statinery & gifts</li>
+          <li class="navs__item">blog</li>
+        </ul>
+      </div>
+      <div class="menu">
+        <button id="profile" class="menu__el">
+          <img src="imgs/icons/profile.svg" />
+        </button>
+        <button id="search" class="menu__el">
+          <img src="imgs/icons/search-button.svg" />
+        </button>
+        <button id="shopping-bag" class="menu__el">
+          <img src="imgs/icons/cart.svg" />
+          <p
+            id="cart-count"
+            class="shopping-bag__count shopping-bag__count_empty"
+          ></p>
+        </button>
+      </div>
+    </header>
+
+    <section class="slider">
+      <img class="slider__img" />
+
+      <div class="banner__promo">
+        <a href="#" class="banner__link banner__link_blue"
+          >Change old book on new</a
+        >
+        <a href="#" class="banner__link banner__link_pink"
+          >Top 100 books 2022</a
+        >
+      </div>
+
+      <div class="slider__bottom-menu"></div>
+    </section>
+
+    <main>
+      <nav>
+        <ul class="sidebar">
+          <li
+            class="sidebar__el sidebar__el_active"
+            data-category="Architecture"
+          >
+            Architecture
+          </li>
+          <li class="sidebar__el" data-category="Art">Art & Fashion</li>
+          <li class="sidebar__el" data-category="Biography & Autobiography">
+            Biography
+          </li>
+          <li class="sidebar__el" data-category="Business">Business</li>
+          <li class="sidebar__el" data-category="Hobbies">Crafts & Hobbies</li>
+          <li class="sidebar__el" data-category="Drama">Drama</li>
+          <li class="sidebar__el" data-category="Fiction">Fiction</li>
+          <li class="sidebar__el" data-category="Cooking">Food & Drink</li>
+          <li class="sidebar__el" data-category="Health & Fitness">
+            Health & Wellbeing
+          </li>
+          <li class="sidebar__el" data-category="History">
+            History & Politics
+          </li>
+          <li class="sidebar__el" data-category="Humor">Humor</li>
+          <li class="sidebar__el" data-category="Poetry">Poetry</li>
+          <li class="sidebar__el" data-category="Psychology">Psychology</li>
+          <li class="sidebar__el" data-category="Science">Science</li>
+          <li class="sidebar__el" data-category="Technology">Technology</li>
+          <li class="sidebar__el" data-category="Travel">Travel & Maps</li>
+        </ul>
+      </nav>
+
+      <section id="products" class="products"></section>
+      <button id="load-btn" class="btn btn_load">load more</button>
+    </main>
+  </body>
+</html>

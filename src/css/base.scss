@@ -1,0 +1,32 @@
+@import "header";
+@import "slider";
+@import "sidebar";
+@import "products";
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito+Sans:opsz@6..12&family=Yeseva+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  max-width: $container-width;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1439px) {
+  body {
+    max-width: 80%;
+  }
+
+  @media screen and (max-width: 1120px) {
+    body {
+      max-width: 95%;
+    }
+  }
+}

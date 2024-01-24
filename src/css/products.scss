@@ -1,0 +1,125 @@
+@import "variables";
+
+.main {
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.products {
+  max-width: $products-list-width;
+  padding-top: 45px;
+  margin-bottom: 84px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 80px;
+  margin-left: 190px;
+
+  &__item {
+    margin-bottom: 85px;
+  }
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  &__img {
+    width: 40%;
+    height: 100%;
+    box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
+  }
+
+  &__card {
+    max-width: 176px;
+  }
+
+  &__author,
+  &__rating,
+  &__description {
+    font-family: $font-opensans;
+    font-size: 10px;
+    color: $color-grey;
+  }
+
+  &__author,
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__rating,
+  &__description,
+  &__price {
+    margin-bottom: 17px;
+  }
+
+  &__rating,
+  .rating__stars {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__rating {
+    width: 150px;
+  }
+
+  &__title,
+  &__price {
+    font-family: $font-monsterrat;
+    font-weight: 700;
+    color: $color-black;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  &__price {
+    font-size: 13px;
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  border: 1px solid $color-blue;
+  background-color: $color-bg;
+  color: $color-blue;
+  font-family: $font-monsterrat;
+  font-weight: 700;
+  font-size: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 5px 10px 0 rgba(53, 49, 84, 0.3);
+  }
+
+  &_load {
+    width: 176px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  &_in-cart {
+    border: 1px solid $color-grey-btn;
+    color: $color-grey;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .products {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 740px) {
+    .products {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@import "variables";
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 47px 0 40px 0;
+
+  font-family: $font-monsterrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logo_text {
+  color: var(--text-black, #1c2a39);
+  font-size: 24px;
+}
+
+.navs {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+  list-style-type: none;
+
+  &__item {
+    color: $color-grey;
+    font-size: 10px;
+    text-transform: uppercase;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &_active {
+      color: $color-black;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+  &__el {
+    position: relative;
+    background-color: inherit;
+    border: none;
+  }
+}
+
+.shopping-bag__count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background-color: #ff353a;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+
+  &_empty {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 550px) {
+    .navs {
+      justify-content: center;
+      margin-bottom: 10px;
+      &__wrap {
+        width: 100%;
+      }
+    }
+
+    .menu {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
